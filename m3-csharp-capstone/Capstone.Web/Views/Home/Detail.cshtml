@@ -1,0 +1,56 @@
+﻿@model Capstone.Web.Models.Park
+
+
+
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="weatherbutton">
+    <a href="@Url.Action("Weather", "Weather", new {id = Model.imgName})">
+        <button type="button" id="pleasework" class="btn btn-warning pull-right">View 5 Day Forecast For This Park</button>
+    </a>
+</div>
+<div class="toppart">
+    <div class="detailpic">
+        <img src="~/Content/img/parks/@(Model.imgName).jpg" />
+    </div>
+    <div class="lefttext">
+        <div>
+            <h1>@Model.parkName</h1>
+          
+
+        </div>
+            
+        
+
+
+     
+        <h2><b>Founded:</b> @Model.yearFounded in @Model.location</h2>
+
+        <h4><b>Elevation:</b> @Model.elevation <b>Acreage:</b> @Model.acreage </h4>
+
+        <h4><b>Number of Campsite:</b> @Model.numberOfCampsites </h4>
+
+        <h4><b>Miles of Trails:</b> @Model.milesOfTrail </h4>
+
+        <h4><b>Climate:</b> @Model.climate</h4>
+
+        <h4><b>Number of Animal Species:</b> @Model.numberOfAnimalSpecies </h4>
+
+        <h4><b>Annual Visitors:</b> @Model.annualVisitorCount</h4>
+
+        <h4><b>Entry Fee:</b> @Model.entryFee.ToString("C") </h4>
+    </div>
+    <div class="bottompart">
+    <p>@Model.summary</p>
+
+    <p>@Model.inspirationalQuote - @Model.inspirationalQuoteSource</p>
+    
+    </div>
+    
+
+</div>
+

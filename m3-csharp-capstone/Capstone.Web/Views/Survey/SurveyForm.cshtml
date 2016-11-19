@@ -1,0 +1,50 @@
+﻿@model Capstone.Web.Models.Survey
+@{
+    ViewBag.Title = "SurveyForm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="form">Survey Form</h2>
+
+@using (Html.BeginForm("SurveyForm", "Survey", FormMethod.Post))
+{
+    <div class="formelement">
+        @Html.Label("ParkName", "Pick your park", new { @class = "formLabel" })
+        @Html.DropDownListFor(m => m.ParkCode, (IEnumerable<SelectListItem>)ViewBag.ParkOptions)
+
+
+    </div>
+
+      <div class="formelement">
+        @Html.Label("ActivityLevel", "Please Enter your Activity Level:", new { @class = "formLabel" })
+        @Html.DropDownListFor(m => m.ActivityLevel, (IEnumerable<SelectListItem>)ViewBag.ActivityOptions)
+        <span style="color:red">@Html.ValidationMessageFor(m => m.ActivityLevel)</span>
+</div>
+
+    <div class="formelement">
+        @Html.Label("EmailAddress", "Please enter your email address:")
+        @Html.TextBoxFor(m => m.EmailAddress)
+        <span style="color:red">@Html.ValidationMessageFor(m => m.EmailAddress)</span>
+    </div>
+
+  
+
+    <div class="formelement">
+        @Html.Label("State", "Please enter the State in Which you Live:")
+        @Html.TextBoxFor(m => m.State)
+        <span style="color:red">@Html.ValidationMessageFor(m => m.State)</span>
+</div>
+
+    
+
+
+    <div class="formelement">
+
+        <button> Do Stuff!</button>
+
+    </div>
+}
+
+
+
+

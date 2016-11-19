@@ -1,0 +1,118 @@
+﻿@model List<Capstone.Web.Models.Weather>
+
+@{
+    ViewBag.Title = "Weather";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+
+@foreach (var item in Model)
+{
+    <h2 class="form">@item.ParkName</h2>
+    break;
+}
+
+<div>
+
+
+    <table class="weathertable">
+        <tr>
+            @foreach (var pic in Model)
+            {
+                <td class="weatherelement"><img class="tablepic" src="~/Content/img/weather/@(pic.Forecast).png"</td>
+            }
+        </tr>
+        <tr>
+            @foreach (var pic in Model)
+            {
+                <td class="weatherelement">Day @pic.FiveDayForcastValue</td>
+            }
+        </tr>
+        <tr>
+            @foreach (var pic in Model)
+            {
+                <td class="weatherelement">High:<span id="spantag">@pic.ConvertTemp(@pic.High)</span> Low: @pic.ConvertTemp(@pic.Low) </td>
+            }
+        </tr>
+        <tr>
+            @foreach (var pic in Model)
+            {
+
+
+
+                if (pic.Forecast == "snow")
+                {
+
+                    <td class="weatherelement" style="color:red">Bring Snow Shoes!</td>
+                }
+                else if (pic.Forecast == "rain")
+                {
+
+                    <td class="weatherelement" style="color:red">Bring Rain Shoes!</td>
+                }
+                else if (pic.Forecast == "thunderstorms")
+                {
+
+                    <td class="weatherelement" style="color:red">Seek Shelter!</td>
+                }
+                else if (pic.Forecast == "sunny")
+                {
+
+                    <td class="weatherelement" style="color:red">Bring Sun Block!</td>
+                }
+
+                else
+                {
+                    <td class="weatherelement"> </td>
+
+                }
+            }
+
+        <tr>
+            @foreach (var pic in Model)
+            {
+
+
+
+                if (pic.High > 75)
+                {
+
+                    <td class="weatherelement" style="color:orange">Bring Extra Water!</td>
+                }
+                else if (pic.Low + 20 >pic.High)
+                {
+
+                    <td class="weatherelement" style="color:orange">Bring Breathable Layers!</td>
+                }
+                else if (pic.Low < 20)
+                {
+
+                    <td class="weatherelement" style="color:orange">Don't Get Froze!</td>
+                }
+               
+                else
+                {
+                    <td class="weatherelement"> </td>
+
+                }
+            }
+        </tr>
+
+
+    </table>
+    
+
+</div>
+<div class="weatherbuttons">
+    @using (Html.BeginForm("TemperatureType", "Weather", FormMethod.Post))
+    {
+
+        <p class="radioButtons">Fahrenheit @Html.RadioButton("tempType", "F") <span id="radbut"class="radioButtons">Celsius @Html.RadioButton("tempType", "C", new { id = "theid"})</span><button id="stuff" class="btn btn-primary">Submit</button></p>
+            
+            
+    }
+</div>
+

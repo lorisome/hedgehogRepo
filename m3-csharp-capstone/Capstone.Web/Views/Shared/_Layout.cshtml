@@ -1,0 +1,65 @@
+﻿
+<link rel="stylesheet" type="text/css" href="~/Content/Style.css">
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Layout</title>
+
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div class="topBanner">
+            <img class="topPic" src="~/Content/img/logo.png" />
+
+
+
+            <div id="secondbar">
+
+                <div id="menubutton" class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a style="color:black; " class="dropdown-toggle" data-toggle="dropdown" href="#">Menu Options   <span class="glyphicon glyphicon-cog"></span> <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                                <li><a href="@Url.Action("SurveyForm", "Survey")">Survey</a></li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+    </header>
+    <div class="section">
+        @RenderBody()
+    </div>
+    
+</body>
+</html>

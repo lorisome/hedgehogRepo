@@ -1,0 +1,214 @@
+﻿body {
+    background-attachment: fixed;
+    background-image: url(img/subtle_white_mini_waves/subtle_white_mini_waves/subtle_white_mini_waves.png);
+}
+
+.topBanner {
+    background-color: tan;
+}
+
+.topPic {
+    height: 12em;
+    width: auto;
+}
+
+.secondBanner {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #009900;
+    text-decoration: none;
+    border-bottom: 3px solid #bfbfbf;
+}
+
+.section {
+    clear: both;
+    display: block;
+    width: 95%;
+    margin: 20px auto;
+    vertical-align: top;
+    min-height: 450px;
+    background-color: #FFF;
+    border-radius: 3px;
+    
+}
+
+.section2 {
+
+   
+    clear: both;
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    vertical-align: top;
+    min-height: 450px;
+    background-color: #FFF;
+    border-radius: 3px;
+    background-attachment: fixed;
+    background-image: url(img/subtle_white_mini_waves/subtle_white_mini_waves/subtle_white_mini_waves.png);
+}
+
+
+
+#NavigationList {
+    margin: 0px;
+    border-right: 20px;
+    border-color: black;
+    text-align: right;
+}
+
+#listitem {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+#listitem2 {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    border-right: 3px solid #bfbfbf;
+    color: black;
+}
+
+.tile {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+    text-align: center;
+    margin-bottom: 15em;
+    margin-left: 10%;
+    margin-top: 2em;
+    background-color: tan;
+    min-height: 580px;
+    border: black 3px solid;
+    margin: .09em;
+}
+
+.tilepic {
+    width: 80%;
+    height: 20em;
+    margin-top: 2em;
+}
+
+.detailpic {
+    float: left;
+    margin: 0em;
+    margin-bottom: 2em;
+    margin-left: .5em;
+    margin-top: .5em;
+}
+
+.lefttext {
+    display: inline-block;
+    text-align: left;
+    padding-left: 2em;
+}
+
+.bottompart {
+    margin-top: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.toppart {
+    background-color: tan;
+}
+
+.tablepic {
+    width: 10em;
+    height: auto;
+}
+
+#menubutton {
+    vertical-align: top;
+    display: inline-block;
+}
+
+#secondbar {
+    background-attachment: fixed;
+    background-image: url(img/subtle_white_mini_waves/subtle_white_mini_waves/subtle_white_mini_waves.png);
+}
+
+.form {
+    text-align: center;
+    
+    padding:.8em;
+}
+
+.formelement {
+    padding: 1em;
+    text-align: center;
+}
+
+#tableitem {
+    padding-right: 3em;
+    padding-bottom: 1em;
+    padding: 5em;
+    display: inline-block;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 3em;
+    width: 500px;
+    height: auto;
+}
+
+table {
+    margin-left: 20%;
+    margin-top: 2em;
+}
+
+#span1 {
+    font-size: 20px;
+    padding-bottom: 30em;
+    color: white;
+    padding-left: 20px;
+    text-align:center;
+}
+
+#span2 {
+    font-size: 35px;
+    padding-bottom: 30em;
+    color: white;
+    text-align:center;
+}
+
+.bigdiv {
+    margin: auto;
+    width: 75%;
+}
+
+.insidediv {
+    text-align: center;
+    display: block;
+}
+
+.weathertable {
+    margin: auto;
+    width: 30%;
+}
+
+.weatherelement {
+    border: skyblue solid 2px;
+    background-color: skyblue;
+    text-align: center;
+}
+
+.weatherbuttons {
+    padding-top: 2em;
+    margin: auto;
+    width: 15%;
+}
+
+.stuff {
+    display: inline-block;
+}
+
+#radbut {
+    padding-right: 1em;
+}
+

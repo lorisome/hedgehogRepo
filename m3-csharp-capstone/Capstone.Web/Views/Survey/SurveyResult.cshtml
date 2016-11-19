@@ -1,0 +1,29 @@
+﻿@model List<Capstone.Web.Models.SurveyResult>
+
+
+
+@{
+    ViewBag.Title = "SurveyResult";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="form">Survey Results</h2>
+<div class="bigdiv">
+
+    @foreach (var parks in Model)
+    {
+
+        
+            <div style="background-image:url(../../Content/img/parks/@(parks.ParkCode).jpg" id="tableitem"><span id="span1">@parks.ParkName</span>
+    
+                <div class="insidediv"> <span id="span2"> Votes:  @parks.Count</span> </div>
+    
+    <br />
+    
+    </div>
+
+    
+
+
+    }
+</div>
