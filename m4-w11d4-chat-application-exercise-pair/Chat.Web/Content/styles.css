@@ -1,0 +1,50 @@
+﻿
+
+table { 
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+table, th, td { 
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+label, input, textarea { 
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+}
+
+
+#chatWindow, #roomMembers {
+    display: inline-block;
+    height: 500px;
+    border: 1px solid #000000;
+    vertical-align: top;
+}
+
+#chatWindow {
+    width: 70%;
+    padding: 5px;
+}
+
+#chatWindow textarea  {
+    width: 100%;
+}
+
+#roomMembers {
+    width: 25%;
+    padding: 5px;
+}
+
+
+#messages {   
+    overflow: auto;
+    height: 80%;
+}
+
+#newMessage { 
+    margin-top: 20px;
+    padding: 10px 10px 0px 0px;
+}

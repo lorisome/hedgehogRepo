@@ -1,0 +1,51 @@
+﻿@model Chat.Web.Models.RoomViewModel
+@{
+    ViewBag.Title = Model.Room.Name + " Room";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var userName = (string)Session["Username"];
+}
+
+<h2>@Model.Room.Name</h2>
+<p>Moderator: @Model.Room.CreatedBy</p>
+<p>@Model.Room.Description</p>
+
+@Html.ActionLink("< Back to Rooms", "Index", "Rooms")<br />
+
+@if (!Model.Members.Contains(userName))
+{
+    using (Html.BeginForm("Join", "Rooms", FormMethod.Post))
+    {
+        @Html.Hidden("roomName", Model.Room.Name)
+        @Html.Hidden("username", userName)
+        <button>JOIN</button>
+    }
+}
+
+<div>
+    <div id="chatWindow">
+        <div id="messages">
+            @Html.Partial("_PartialChatMessageView", Model)
+        </div>
+        <div id="newMessage">
+            @using (Html.BeginForm("New", "Messages", FormMethod.Post))
+            {
+                <div>
+                    @Html.TextArea("Message", new { placeholder = "Enter message here" })
+                    @Html.Hidden("RoomId", Model.Room.Id)
+                    @Html.Hidden("Username", userName)
+                </div>
+                <div>
+                    <button id="newMessageButton">SEND</button>
+                </div>
+            }
+        </div>
+    </div>
+    <div id="roomMembers">
+        <ul>
+            @foreach (var member in Model.Members)
+            {
+                <li>@member</li>
+            }
+        </ul>
+    </div>
+</div>

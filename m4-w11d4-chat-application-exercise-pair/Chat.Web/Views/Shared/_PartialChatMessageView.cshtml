@@ -1,0 +1,8 @@
+﻿@model Chat.Web.Models.RoomViewModel
+
+@foreach (var m in Model.Messages)
+{
+    <p class="message" data-date-time="@m.SentDate.ToString("MM/dd/yyyy hh:mm:ss.fff tt")">
+        @m.Username [@m.SentDate]: @m.Message
+    </p>
+}

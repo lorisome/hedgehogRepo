@@ -1,0 +1,32 @@
+﻿@model List<Chat.Web.Models.RoomModel>
+
+@{
+    ViewBag.Title = "Chat Rooms";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Chat Rooms</h2>
+
+@Html.ActionLink("Create Room", "Create", "Rooms") <br />
+@Html.ActionLink("Login", "Login", "Users") <br />
+@Html.ActionLink("Register", "Register", "Users") 
+
+<table class="rooms">    
+    <thead>
+        <tr>
+            <th>Room Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var room in Model)
+        {
+            <tr>
+                <td>
+                    @Html.ActionLink(room.Name, "View", "Rooms", new { id = room.Id }, null)
+                </td>
+                <td>@room.Description</td>
+            </tr>
+        }
+    </tbody>
+</table>
