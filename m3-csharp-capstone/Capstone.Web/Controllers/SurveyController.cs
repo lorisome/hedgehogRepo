@@ -47,14 +47,30 @@ namespace Capstone.Web.Controllers
         public ActionResult SurveyResult()
         {
             List<SurveyResult> result = surveyDAL.SurveyResults();
+            Dictionary<string, string> parks = GetParkNameAndCode();
+            foreach(SurveyResult sr in result)
+            {
+                sr.ParkName = parks[sr.ParkCode];
+            }
             return View("SurveyResult", result);
         }
 
+        private IParkDAL dal = new ParksSqlDAL();
         private List<SelectListItem> output = new List<SelectListItem>();
+        public Dictionary<string, string> GetParkNameAndCode()
+        {
+            Dictionary<string, string> output = new Dictionary<string, string>();
+            List<Park> parks = dal.GetAllParks();
+            foreach (Park park in parks)
+            {
+                output[park.imgName] = park.parkName;
+            }
+            return output;
+        }
         public List<SelectListItem> GetParkDropDownItems()
         {
-            Survey s = new Survey();
-            Dictionary<string, string> parks = s.GetParkNameAndCode();
+
+            Dictionary<string, string> parks = GetParkNameAndCode();
             foreach (KeyValuePair<string, string> kvp in parks)
             {
                 SelectListItem selItem = new SelectListItem() { Text = kvp.Value, Value = kvp.Key };

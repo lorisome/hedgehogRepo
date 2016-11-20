@@ -22,17 +22,7 @@ namespace Capstone.Web.Models
         public string ActivityLevel { get; set; }
 
         public string ParkName { get; set; }
-        private IParkDAL dal = new ParksSqlDAL();
-        public Dictionary<string, string> GetParkNameAndCode()
-        {
-            Dictionary<string, string> output = new Dictionary<string, string>();
-            List<Park> parks = dal.GetAllParks();
-            foreach (Park park in parks)
-            {
-                output[park.imgName] = park.parkName;
-            }
-            return output;
-        }
+       
     }
 
 }
