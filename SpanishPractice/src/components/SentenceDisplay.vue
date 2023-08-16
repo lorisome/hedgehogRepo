@@ -36,7 +36,7 @@ methods: {
   width: 450px;
   height: 450px;
   margin: 20px;
-  background-color:rgb(253, 212, 218);
+  background-color:rgb(223, 198, 248);
 }
 h2{
   padding-left: 1vw;

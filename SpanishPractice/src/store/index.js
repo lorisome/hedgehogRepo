@@ -1,56 +1,55 @@
-import Vue from "vue";
-import Vuex from "vuex";
+import Vue from 'vue'
+import Vuex from 'vuex'
 
-Vue.use(Vuex);
+Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    books: [
+    sentences: [
       {
-        title: "Kafka on the Shore",
-        author: "Haruki Murakami",
-        read: false,
-        isbn: "9781784877989",
-        flipped: false
+        sentence: "She wasn't a friend, I was.",
+        verbASerOrEstar: "ser",
+        verbAPastOrPresent: "past",
+        verbAAnswer: "era",
+        verbBSerOrEstar: "ser",
+        verbBPastOrPresent: "past",
+        verbBAnswer: "era", 
+        fullTranslatedSentence: "Ella no era una amiga, yo lo era."
+        }, 
+      {
+        sentence: "You(formal) weren't in this place, I was.",
+        verbASerOrEstar: "estar",
+        verbAPastOrPresent: "past",
+        verbAAnswer: "estaba",
+        verbBSerOrEstar: "estar",
+        verbBPastOrPresent: "past",
+        verbBAnswer: "estaba",
+        fullTranslatedSentence: "Usted no estaba en this lugar, yo lo estaba."
       },
+      {sentence: "I'm a friend and they are with me.",
+        verbASerOrEstar: "ser",
+        verbAPastOrPresent: "present",
+        verbAAnswer: "soy",
+        verbBSerOrEstar: "estar",
+        verbBPastOrPresent: "present",
+        verbBAnswer: "estan",
+        fullTranslatedSentence: "Soy una amiga y ellos estan conmigo."
+      }, 
       {
-        title: "The Girl With All the Gifts",
-        author: "M.R. Carey",
-        read: true,
-        isbn: "9780356500157",
-        flipped: true
-      },
-      {
-        title: "The Old Man and the Sea",
-        author: "Ernest Hemingway",
-        read: false,
-        isbn: "9780684830490",
-        flipped: false
-      },
-      {
-        title: "Le Petit Prince",
-        author: "Antoine de Saint-Exupéry",
-        read: false,
-        isbn: "9783125971400",
-        flipped: false
+        sentence: "Were you the guy?",
+        verbASerOrEstar: "ser",
+        verbAPastOrPresent: "past",
+        verbAAnswer: "soy",
+        fullTranslatedSentence: "¿Eras tú el chico?"
       }
     ]
   },
-  mutations: {
-    TOGGLE_READ_STATUS(state, book){
-      book.read = !book.read;
-    },
-    ADD_NEW_BOOK(state, book){
-      state.books.push(book);
-    },
-    FLIP_CARD(state, book){
-      book.flipped = !book.flipped
-    }
-
+  getters: {
   },
-  actions: {},
-  modules: {},
-  // Strict should not be used in production code. It is used here as a
-  // learning aid to warn you if state is modified without using a mutation.
-  strict: true
-});
+  mutations: {
+  },
+  actions: {
+  },
+  modules: {
+  }
+})
