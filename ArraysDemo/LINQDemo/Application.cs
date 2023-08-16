@@ -14,7 +14,11 @@ namespace LINQDemo
             //Create list of ponies to demo the linq
             List<Pony> ponies = new List<Pony>()
             {
-                new Pony("Lavender", "Purple", "Flowers")
+                new Pony("Lavender", "Purple", "Purple", "Flowers", "White"),
+                new Pony("Cotton Candy", "Pink", "Pink", "Dots", "White"),
+                new Pony("Cuddles", "Pink", "Blue", "Dots", "White"),
+                new Pony("Peaches", "Yellow", "Blue", "Dots", "White"),
+
             }
 
 
