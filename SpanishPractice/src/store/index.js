@@ -32,14 +32,14 @@ export default new Vuex.Store({
         verbAAnswer: "soy",
         verbBSerOrEstar: "estar",
         verbBPastOrPresent: "present",
-        verbBAnswer: "estan",
+        verbBAnswer: "están",
         fullTranslatedSentence: "Soy una amiga y ellos estan conmigo."
       }, 
       {
         sentence: "Were you the guy?",
         verbASerOrEstar: "ser",
         verbAPastOrPresent: "past",
-        verbAAnswer: "soy",
+        verbAAnswer: "eras",
         fullTranslatedSentence: "¿Eras tú el chico?"
       }
     ]
