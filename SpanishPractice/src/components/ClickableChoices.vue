@@ -93,7 +93,7 @@ div.clickable-choice{
     border: 2px solid #582a62;
     border-radius: 4px;
     margin: 5px;
-    height: 35vh;
+    height: 30vh;
     background-color: rgb(239, 239, 239);
 }
 .ser-or-estar,

@@ -1,5 +1,5 @@
 <template>
-<div class="sentence-display">
+<div class="sentence-display" v-show="activeSentenceId==sentence.id">
   <h2 class="sentence">{{sentence.sentence}}</h2>
   <clickable-choices v-bind:SerOrEstar="sentence.verbASerOrEstar" v-bind:PastOrPresent="sentence.verbAPastOrPresent" v-bind:FinalVerbForm="sentence.verbAAnswer"/>
   <clickable-choices v-if="sentence.verbBSerOrEstar" v-bind:SerOrEstar="sentence.verbBSerOrEstar" v-bind:PastOrPresent="sentence.verbBPastOrPresent" v-bind:FinalVerbForm="sentence.verbBAnswer"/>
@@ -11,7 +11,7 @@
 <script>
 import ClickableChoices from './ClickableChoices.vue';
 export default {
-props: ['sentence'],
+props: ['sentence', 'activeSentenceId'],
 components:{
   ClickableChoices   
 },

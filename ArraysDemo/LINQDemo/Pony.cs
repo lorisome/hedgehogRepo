@@ -11,16 +11,14 @@ namespace LINQDemo
         public string Name { get; set; }
         public string HairColor { get; set; }
         public string SkinColor { get; set; }
-        public string CutieMark { get; set; }
-        public string CutieColor { get; set; }
+        public CutieMark CutieMark { get; set; }
 
-        public Pony(string name, string hairColor, string skinColor, string cutieMark, string cutieColor)
+        public Pony(string name, string hairColor, string skinColor, CutieMark cutieMark)
         {
-            Name= name;
-            HairColor=hairColor;
+            Name = name;
+            HairColor = hairColor;
             SkinColor = skinColor;
-            CutieMark=cutieMark;
-            CutieColor=cutieColor;
+            CutieMark = cutieMark;
         }
-
+    }
 }

@@ -3,7 +3,7 @@
    <h1>Spanish Practice - Ser and Estar Past and Present</h1>
    
     <div id="sentence-practice">
-    <sentence-display v-for="sentence in this.$store.state.sentences" v-bind:key="sentence.index" v-bind:sentence="sentence" />
+    <sentence-display v-for="sentence in this.$store.state.sentences" v-bind:key="sentence.id" v-bind:sentence="sentence" v-bind:activeSentenceId="activeSentenceId"/>
     </div>
   </div>
 </template>
@@ -16,6 +16,11 @@ export default {
   name: 'HomeView',
   components: {
     SentenceDisplay
+  },
+  data(){
+    return {
+      activeSentenceId: 1
+    }
   }
 }
 </script>

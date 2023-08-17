@@ -7,6 +7,7 @@ export default new Vuex.Store({
   state: {
     sentences: [
       {
+        id: 0,
         sentence: "She wasn't a friend, I was.",
         verbASerOrEstar: "ser",
         verbAPastOrPresent: "past",
@@ -17,6 +18,7 @@ export default new Vuex.Store({
         fullTranslatedSentence: "Ella no era una amiga, yo lo era."
         }, 
       {
+        id: 1,
         sentence: "You(formal) weren't in this place, I was.",
         verbASerOrEstar: "estar",
         verbAPastOrPresent: "past",
@@ -26,7 +28,9 @@ export default new Vuex.Store({
         verbBAnswer: "estaba",
         fullTranslatedSentence: "Usted no estaba en this lugar, yo lo estaba."
       },
-      {sentence: "I'm a friend and they are with me.",
+      {
+        id: 2,
+        sentence: "I'm a friend and they are with me.",
         verbASerOrEstar: "ser",
         verbAPastOrPresent: "present",
         verbAAnswer: "soy",
@@ -36,6 +40,7 @@ export default new Vuex.Store({
         fullTranslatedSentence: "Soy una amiga y ellos estan conmigo."
       }, 
       {
+        id: 3,
         sentence: "Were you the guy?",
         verbASerOrEstar: "ser",
         verbAPastOrPresent: "past",
