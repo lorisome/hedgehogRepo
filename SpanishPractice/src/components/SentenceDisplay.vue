@@ -34,7 +34,7 @@ methods: {
   border: 2px solid black;
   border-radius: 10px;
   width: 450px;
-  height: 450px;
+  height: auto;
   margin: 20px;
   background-color:rgb(223, 198, 248);
 }
@@ -44,5 +44,18 @@ h2{
 }
 .answer-button{
   margin-top:10px;
+}
+button{
+  border: 1px solid #ddd;
+  color: #333;
+  background-color:#fff;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.correct{
+    background-color:rgb(75, 211, 75)
+}
+.incorrect{
+    background-color:rgb(238, 67, 67)
 }
 </style>
