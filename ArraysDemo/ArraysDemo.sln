@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysDemo", "ArraysDemo\ArraysDemo.csproj", "{C753B88D-8E03-4A50-8F1A-A6B6479E7F8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArraysDemo", "ArraysDemo\ArraysDemo.csproj", "{C753B88D-8E03-4A50-8F1A-A6B6479E7F8A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQDemo", "LINQDemo\LINQDemo.csproj", "{30778E9F-516D-41C0-B3DE-420121CFA765}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C753B88D-8E03-4A50-8F1A-A6B6479E7F8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C753B88D-8E03-4A50-8F1A-A6B6479E7F8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C753B88D-8E03-4A50-8F1A-A6B6479E7F8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30778E9F-516D-41C0-B3DE-420121CFA765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30778E9F-516D-41C0-B3DE-420121CFA765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30778E9F-516D-41C0-B3DE-420121CFA765}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30778E9F-516D-41C0-B3DE-420121CFA765}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
