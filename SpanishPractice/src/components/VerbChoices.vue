@@ -13,7 +13,7 @@ data(){
   return{
     allArrays:[
     [{word:'soy',showCorrect:false, showIncorrect:false}, {word:'eres',showCorrect:false, showIncorrect:false}, {word:'es',showCorrect:false, showIncorrect:false}, {word:'son',showCorrect:false, showIncorrect:false}, {word:'somos',showCorrect:false, showIncorrect:false}],
-    [{word:'era',showCorrect:false, showIncorrect:false}, {word:'eras',showCorrect:false, showIncorrect:false}, {word:'eran',showCorrect:false, showIncorrect:false}, {word:'eramos',showCorrect:false, showIncorrect:false}],
+    [{word:'era',showCorrect:false, showIncorrect:false}, {word:'eras',showCorrect:false, showIncorrect:false}, {word:'eran',showCorrect:false, showIncorrect:false}, {word:'éramos',showCorrect:false, showIncorrect:false}],
     [{word:'estoy',showCorrect:false, showIncorrect:false}, {word:'estás',showCorrect:false, showIncorrect:false}, {word:'está',showCorrect:false, showIncorrect:false}, {word:'están',showCorrect:false, showIncorrect:false}, {word:'estamos',showCorrect:false, showIncorrect:false}],
     [{word:'estaba',showCorrect:false, showIncorrect:false}, {word:'estabas',showCorrect:false, showIncorrect:false}, {word:'estaban',showCorrect:false, showIncorrect:false}, {word:'estabamos',showCorrect:false, showIncorrect:false}]
     ],
