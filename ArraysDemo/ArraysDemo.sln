@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArraysDemo", "ArraysDemo\Ar
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQDemo", "LINQDemo\LINQDemo.csproj", "{30778E9F-516D-41C0-B3DE-420121CFA765}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQDemoClean", "LINQDemoClean\LINQDemoClean.csproj", "{62B8206F-44CE-40D9-8097-B486D9A4025A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{30778E9F-516D-41C0-B3DE-420121CFA765}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30778E9F-516D-41C0-B3DE-420121CFA765}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30778E9F-516D-41C0-B3DE-420121CFA765}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62B8206F-44CE-40D9-8097-B486D9A4025A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62B8206F-44CE-40D9-8097-B486D9A4025A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62B8206F-44CE-40D9-8097-B486D9A4025A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62B8206F-44CE-40D9-8097-B486D9A4025A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

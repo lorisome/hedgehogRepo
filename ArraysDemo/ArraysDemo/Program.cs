@@ -29,7 +29,7 @@ int[] myNumbers = new int[6] { 45, 78, 100, 2, 1, 99 };
 
 //index out of range exception - your code will raise an exception if you try to access an element in an array THAT DOES NOT EXIST (is out of the bounds of the array)
 //string thisWillBreak = myPetNames[4];
-myPetNames[8] = "This Will Also Break";
+//myPetNames[8] = "This Will Also Break";
 
 
 ////Do you need to know how big your array is? The implementation comes with an easy way to do that:
@@ -47,6 +47,8 @@ myPetNames[8] = "This Will Also Break";
 //{
 //    Console.WriteLine(pony);
 //}
+int checkmod = 1 % 3;
+int s = 3;
 
 //Console.WriteLine();
 ////loop through the elements of an array BY INDEX and do something with the elements
